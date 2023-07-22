@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muichiro Tokito</title>
+    <link rel="stylesheet" href="/css/style.css" class="css">
+</head>
+<body>
+    <main class="main-page">
+        <div class="mfcon mcon">
+            <div class="title">
+                <h1>MIST HASHIRA</h1>
+            </div>
+            <div class="optional-bg">
+                <div class="mt-img" id="background_one"></div>
+                <div class="mt-img" id="background_two"></div>
+                <div class="mt-img" id="background_three"></div>
+                <div class="mt-img" id="background_fourth"></div>
+            </div>
+        </div>
+        <div class="mscon mcon">
+            <h1>Muichiro Tokito</h1>
+            <div class="about-mt">
+                <h3>Race: Human</h3>
+                <h3>Gender: Male</h3>
+                <h3>Age: 14</h3>
+                <h3>Height: 160cm</h3>
+                <h3>Weight: 56kg</h3>
+                <h3>Birthday: August 8th</h3>
+                <h3>Haircolor: Black to Mint Green</h3>
+                <h3>Eye color: Mint green</h3>
+                <h3>Affialiation: Demon Slayer Corps</h3>
+                <h3>Combat Style: Mist Breathing</h3>
+            </div>
+           
+            <div class="breathing-forms">
+                <h1>Breathing Forms</h1>
+                <div class="bf-vids">
+                    <video id="first_form" controls width="150"><source src="/vid/mist_breathing_seventh_form.mp4"></video>
+                    <video controls width="150"><source src="/vid/mist_breathing_second_form.mp4"></video>
+                    <video controls width="150"><source src="/vid/mist_breathing_fifth_form.mp4"></video>
+                </div>
+            </div>
+        </div>
+
+
+    <!--<h1 id="background_one">One</h1>
+    <h1 id="background_two">Two</h1>-->
+    </main>
+
+    <script>
+        document.querySelector("#background_one").addEventListener("click", function(){
+        document.querySelector(".main-page").classList.remove("muichiro01");
+        document.querySelector(".main-page").classList.remove("muichiro02");
+        document.querySelector(".main-page").classList.remove("muichiro03");
+        });
+
+        document.querySelector("#background_two").addEventListener("click", function(){
+        document.querySelector(".main-page").classList.add("muichiro01");
+        document.querySelector(".main-page").classList.remove("muichiro02");
+        document.querySelector(".main-page").classList.remove("muichiro03");
+        });
+        document.querySelector("#background_three").addEventListener("click", function(){
+        document.querySelector(".main-page").classList.add("muichiro02");
+        document.querySelector(".main-page").classList.remove("muichiro03");
+        });
+        document.querySelector("#background_fourth").addEventListener("click", function(){
+        document.querySelector(".main-page").classList.add("muichiro03");
+        document.querySelector(".main-page").classList.remove("muichiro01");
+        document.querySelector(".main-page").classList.remove("muichiro02");
+        });
+        
+        
+        
+    </script>
+</body>
+</html>

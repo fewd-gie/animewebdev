@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: 1px dashed rgb(255,255,255);*/
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page{
+    background: url(/img/Muichiro01.png) center/cover no-repeat;
+}
+
+.main-page.muichiro01{
+    background: url(/img/image04.png) center/cover no-repeat;
+
+}
+
+.main-page.muichiro02{
+    background: url(/img/image05.jpeg) center/cover no-repeat;
+}
+.main-page.muichiro03{
+    background: url(/img/image08.jpeg) center/cover no-repeat;
+}
+
+.mcon{
+    width: 50%;
+    height: 100%;
+}
+
+.mscon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.mfcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mfcon .title{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 2em;
+}
+
+.title h1{
+    font-family: cursive;
+    background: -webkit-linear-gradient(270deg, rgb(2, 204, 255), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7em;
+    letter-spacing: 0.1em;
+}
+.mfcon .optional-bg{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 0 0 0 2em;
+}
+
+.optional-bg .mt-img{
+    width: 10em;
+    height: 5em;
+    border:2px solid rgb(6, 205, 255);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(6, 205, 255);
+    filter: brightness(0.2);
+}
+.mt-img:hover{
+    transform: translateY(-20%);
+    transition-duration: 0.5s;
+    filter: brightness(1);
+}
+
+#background_one{
+    background: url(/img/Muichiro01.png) center/cover no-repeat;
+}
+#background_two{
+    background: url(/img/image04.png) center/cover no-repeat;
+}
+#background_three{
+    background: url(/img/image05.jpeg) center/cover no-repeat;
+}
+#background_fourth{
+    background: url(/img/image08.jpeg) center/cover no-repeat;
+}
+
+.mscon .about-mt{
+    width: 75%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1em;
+
+}
+
+.about-mt h1{
+    text-align: center;
+}
+
+.breathing-forms{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.bf-vids{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.breathing-forms video{
+    width: 15em;
+    height: 7.4em;
+    border: 1px solid rgb(6, 205, 255);
+}
